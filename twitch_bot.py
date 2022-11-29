@@ -5,7 +5,7 @@ from os.path import join
 from twitchio.ext import commands
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
-dotenv_path = join(dir_path, '.env')
+dotenv_path = join(dir_path, 'secret.env')
 load_dotenv(dotenv_path)
 
 # credentials
