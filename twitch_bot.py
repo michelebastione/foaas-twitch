@@ -20,10 +20,10 @@ with open(DATA) as file:
     channels = json.loads(file.read())["channels"]
 
 bot = commands.Bot(
-    irc_token=TMI_TOKEN,
+    TMI_TOKEN,
+    prefix=BOT_PREFIX,
     client_id=CLIENT_ID,
     nick=BOT_NAME,
-    prefix=BOT_PREFIX,
     initial_channels=[CHANNEL, *channels]
 )
 
